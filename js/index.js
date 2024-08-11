@@ -42,3 +42,12 @@ function Age() {
 }
 
 addEventListener("DOMContentLoaded", (event) => {setup()});
+function redirectIfPortrait() {
+    if (window.innerWidth <= 768) {
+        window.location.href = "mobile-not-allowed.html";
+    }
+}
+
+redirectIfPortrait();
+
+window.addEventListener("orientationchange", redirectIfPortrait);
