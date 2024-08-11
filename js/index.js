@@ -51,3 +51,4 @@ function redirectIfPortrait() {
 redirectIfPortrait();
 
 window.addEventListener("orientationchange", redirectIfPortrait);
+window.addEventListener('resize', redirectIfPortrait);
