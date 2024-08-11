@@ -1,0 +1,85 @@
+:root{
+  color: white;
+}
+.name {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: larger;
+}
+.roboto-mono{
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+#top{
+  top:-1px;
+  left:0px;
+  right: 0px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  
+}
+#top::after { /* line */
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0eff00;
+}
+.main{
+  display: flex;
+  direction: ltr;
+  flex-direction: row;
+}
+#profile_image{
+  margin-left: -50.5vh;
+  left:0;
+  height: 50vh;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+a{
+  z-index: 0;
+}
+
+.spinner {
+  margin-top:-0.5vh;
+  z-index: -2;
+  left:0;
+  width: 51vh;
+  height: 51vh;
+  border-radius: 50%;
+  background: conic-gradient(#0000 -20%,#0eff00);
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(50% - 9px),#000 0);
+  animation: spinner-zp9dbg 5s infinite linear;
+}
+
+@keyframes spinner-zp9dbg {
+  to {
+     transform: rotate(1turn);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0d13;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00880073;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #008800;
+}
